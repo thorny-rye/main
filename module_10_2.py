@@ -1,5 +1,4 @@
 from threading import Thread
-import requests
 from time import sleep
 
 
