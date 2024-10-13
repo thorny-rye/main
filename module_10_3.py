@@ -1,6 +1,5 @@
 import random
 from time import sleep
-import requests
 from threading import Thread, Lock
 
 
