@@ -22,14 +22,13 @@ class Bank:
         take_money = random.randint(50, 500)
         for i in range(100):
             print(f"Запрос на {take_money}" + "\n")
-            self.balance -= take_money
             if take_money <= self.balance:
                 self.balance -= take_money
                 print(f"Снятие: {take_money}. Баланс: {self.balance}" + "\n")
             else:
                 print("Запрос отклонён, недостаточно средств" + "\n")
                 self.lock.acquire()
-                sleep(0.001)
+            sleep(0.001)
 
 bk = Bank()
 
